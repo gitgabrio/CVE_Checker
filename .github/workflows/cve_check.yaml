@@ -13,7 +13,8 @@ jobs:
       - name: 'Dependency Review'
         uses: actions/dependency-review-action@v4
         with:
+          vulnerability-check: true
           fail-on-severity: low
 
           # Use comma-separated names to pass list arguments:
-          deny-licenses: LGPL-2.0, BSD-2-Clause, Apache-2.0, MIT
+          deny-licenses: LGPL-2.0, BSD-2-Clause, MIT
