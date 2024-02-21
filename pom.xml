@@ -14,6 +14,7 @@
         <maven.compiler.source>${maven.compiler.release}</maven.compiler.source>
         <maven.compiler.target>${maven.compiler.release}</maven.compiler.target>
         <version.com.google.guava>32.0.0-jre</version.com.google.guava>
+        <version.io.quarkus.quarkus-resteasy>3.2.9.Final</version.io.quarkus.quarkus-resteasy>
     </properties>
 
     <dependencyManagement>
@@ -23,6 +24,11 @@
                <artifactId>guava</artifactId>
                <version>${version.com.google.guava}</version>
            </dependency>
+           <dependency>
+               <groupId>io.quarkus</groupId>
+               <artifactId>quarkus-resteasy</artifactId>
+               <version>${version.io.quarkus.quarkus-resteasy}</version>
+           </dependency>
        </dependencies>
     </dependencyManagement>
 
@@ -30,6 +36,10 @@
         <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-resteasy</artifactId>
         </dependency>
     </dependencies>
 
